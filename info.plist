@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>me.mrhate.yquery</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>0ADB2D69-1330-4F0E-84C4-B9A778B07575</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6BFE11DE-4EA6-43D0-A510-5F6F88A6BFDE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>MrHate</string>
+	<key>description</key>
+	<string>Simple query workflow for youdao translation.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>yquery</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tra</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>querying ...</string>
+				<key>script</key>
+				<string>python3 yquery.py auto auto "{query}" </string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>CN to EN or any to CN by default.</string>
+				<key>title</key>
+				<string>yquery</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0ADB2D69-1330-4F0E-84C4-B9A778B07575</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>6BFE11DE-4EA6-43D0-A510-5F6F88A6BFDE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>*注意* 使用前先到有道智云上起一个文本翻译实例，并把翻译实例的应用ID和应用密钥分别填到右边对应的appid和appkey变量中。
+
+rowlen是翻译长句时的一行最长字数。
+
+其他相关信息查看目录下的readme文件。</string>
+	<key>uidata</key>
+	<dict>
+		<key>0ADB2D69-1330-4F0E-84C4-B9A778B07575</key>
+		<dict>
+			<key>xpos</key>
+			<integer>195</integer>
+			<key>ypos</key>
+			<integer>205</integer>
+		</dict>
+		<key>6BFE11DE-4EA6-43D0-A510-5F6F88A6BFDE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
+			<integer>205</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>appid</key>
+		<string>2416063946de8a6a</string>
+		<key>appkey</key>
+		<string>3XvlCd7f2o1zWA8IojYcjQFDGiMEO4yl</string>
+		<key>rowlen</key>
+		<string>23</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>appid</string>
+		<string>appkey</string>
+	</array>
+	<key>version</key>
+	<string>0.2.1</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
